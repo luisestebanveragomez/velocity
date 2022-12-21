@@ -19,7 +19,7 @@ export class VelInput extends LitElement {
 
   constructor() {
     super();
-    this.placeholder = '';
+    this.placeholder = ' ';
   }
 
   render() {
