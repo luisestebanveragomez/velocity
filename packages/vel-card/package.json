@@ -3,7 +3,7 @@
   "description": "Webcomponent vel-card following open-wc recommendations",
   "license": "MIT",
   "author": "vel-card",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
