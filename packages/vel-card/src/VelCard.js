@@ -1,4 +1,6 @@
 import { html, css, LitElement } from 'lit';
+import '@velocity/button/vel-button';
+import '@velocity/input/vel-input';
 
 export class VelCard extends LitElement {
   static get styles() {
@@ -6,6 +8,7 @@ export class VelCard extends LitElement {
       :host {
         display: block;
         padding: 25px;
+        background: crimson;
         color: var(--vel-card-text-color, #000);
       }
     `;
@@ -24,14 +27,10 @@ export class VelCard extends LitElement {
     this.placeholder = '';
   }
 
-  __increment() {
-    this.counter += 1;
-  }
-
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
+      <vel-button text=${this.text}></vel-button>
+      <vel-input placeholder=${this.placeholder}></vel-input>
     `;
   }
 }

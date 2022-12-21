@@ -18,6 +18,8 @@
     "build": "rollup -c --bundleConfigAsCjs"
   },
   "dependencies": {
+    "@velocity/button": "^0.0.3",
+    "@velocity/input": "^0.0.3",
     "lit": "^2.0.2"
   },
   "devDependencies": {

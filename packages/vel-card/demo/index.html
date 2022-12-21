@@ -9,21 +9,10 @@
   </style>
 </head>
 <body>
-  <div id="demo"></div>
+<vel-card text="Holaa" placeholder="tomalo">
+  some light-dom
+</vel-card>
 
-  <script type="module">
-    import { html, render } from 'lit';
-    import '../vel-card.js';
-
-    const title = 'Hello owc World!';
-    render(
-      html`
-        <vel-card .title=${title}>
-          some light-dom
-        </vel-card>
-      `,
-      document.querySelector('#demo')
-    );
-  </script>
+  <script type="module" src='../vel-card.js'></script>
 </body>
 </html>
