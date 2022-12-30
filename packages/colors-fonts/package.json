@@ -1,6 +1,6 @@
 {
   "name": "@velocity/color-fonts",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -13,8 +13,8 @@
     "assets"
   ],
   "devDependencies": {
-    "style-dictionary": "^3.7.1",
     "node-sass": "^8.0.0",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "style-dictionary": "^3.7.1"
   }
 }

@@ -3,7 +3,7 @@
   "description": "Webcomponent vel-card following open-wc recommendations",
   "license": "MIT",
   "author": "vel-card",
-  "version": "0.0.4-alpha.0",
+  "version": "0.0.4",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
@@ -18,8 +18,8 @@
     "build": "rollup -c --bundleConfigAsCjs"
   },
   "dependencies": {
-    "@velocity/button": "^0.0.3",
-    "@velocity/input": "^0.0.3",
+    "@velocity/button": "^0.0.4",
+    "@velocity/input": "^0.0.4",
     "lit": "^2.0.2"
   },
   "devDependencies": {
