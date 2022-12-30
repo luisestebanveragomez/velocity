@@ -1,12 +1,12 @@
 @use 'sass:string';
 /**
  * Do not edit directly
- * Generated on Fri, 30 Dec 2022 20:56:32 GMT
+ * Generated on Fri, 30 Dec 2022 21:25:54 GMT
  */
 @use 'sass:string';
 /**
  * Do not edit directly
- * Generated on Fri, 30 Dec 2022 20:56:32 GMT
+ * Generated on Fri, 30 Dec 2022 21:25:54 GMT
  */
 :root {
   /* var colors */
@@ -296,11 +296,19 @@
   --vel-outline-color-magenta-9: var(--vel-color-magenta-9);
   --vel-color-magenta-10: #520339;
   --vel-outline-color-magenta-10: var(--vel-color-magenta-10);
+  /* var fonts */
+  --vel-font-roboto-thin: 100;
+  --vel-font-roboto-light: 300;
+  --vel-font-roboto-regular: 400;
+  --vel-font-roboto-medium: 500;
+  --vel-font-roboto-bold: 700;
+  --vel-font-roboto-black: 900;
   /* var font-family */
   --vel-font-roboto: 'Roboto'; }
 
 body {
-  font-family: var(--vel-font-roboto); }
+  font-family: var(--vel-font-roboto);
+  font-weight: var(--vel-font-roboto-regular); }
 
 @font-face {
   font-family: "Roboto";

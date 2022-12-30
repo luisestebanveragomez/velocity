@@ -1,14 +1,16 @@
 @import './font';
+@import "utils";
 
 @mixin vel--var-font() {
     @each $font-name, $font-value in $typeFont {
-        --vel-font-#{to-lower-case($font-name)}: '#{$font-name}';
+        --vel-font-#{to-lower-case($font-name)}: #{$font-value};
     }
 }
 
 @mixin vel--font-face($font) {
     @at-root body {
         font-family: var(--vel-font-#{to-lower-case($font)});
+        font-weight: var(find-variable-color($typeFont, 400, '--vel-font-'));
     }
 
     @each $name, $value in $typeFont {
