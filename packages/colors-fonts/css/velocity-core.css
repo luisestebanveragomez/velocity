@@ -1,12 +1,12 @@
 @use 'sass:string';
 /**
  * Do not edit directly
- * Generated on Fri, 30 Dec 2022 18:19:59 GMT
+ * Generated on Fri, 30 Dec 2022 20:56:32 GMT
  */
 @use 'sass:string';
 /**
  * Do not edit directly
- * Generated on Fri, 30 Dec 2022 18:19:59 GMT
+ * Generated on Fri, 30 Dec 2022 20:56:32 GMT
  */
 :root {
   /* var colors */
@@ -297,48 +297,43 @@
   --vel-color-magenta-10: #520339;
   --vel-outline-color-magenta-10: var(--vel-color-magenta-10);
   /* var font-family */
-  --vel-font-roboto-thin: 'roboto-thin';
-  --vel-font-roboto-light: 'roboto-light';
-  --vel-font-roboto-regular: 'roboto-regular';
-  --vel-font-roboto-medium: 'roboto-medium';
-  --vel-font-roboto-bold: 'roboto-bold';
-  --vel-font-roboto-black: 'roboto-black'; }
+  --vel-font-roboto: 'Roboto'; }
 
 body {
-  font-family: var(--vel-font-roboto-regular); }
+  font-family: var(--vel-font-roboto); }
 
 @font-face {
-  font-family: "roboto";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto/roboto-thin.ttf");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
-  font-family: "roboto";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto/roboto-light.ttf");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: "roboto";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto/roboto-regular.ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: "roboto";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto/roboto-medium.ttf");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
-  font-family: "roboto";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto/roboto-bold.ttf");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
-  font-family: "roboto";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto/roboto-black.ttf");
   font-weight: 900;
   font-style: normal; }
@@ -4061,22 +4056,3 @@ body {
 
 .vel-outline-color-magenta-10_dashed_2 {
   border: 0.09375rem dashed var(--vel-color-magenta-10); }
-
-/*** Class font ***/
-.vds-font-roboto-thin {
-  font-family: var(--vel-font-roboto-thin); }
-
-.vds-font-roboto-light {
-  font-family: var(--vel-font-roboto-light); }
-
-.vds-font-roboto-regular {
-  font-family: var(--vel-font-roboto-regular); }
-
-.vds-font-roboto-medium {
-  font-family: var(--vel-font-roboto-medium); }
-
-.vds-font-roboto-bold {
-  font-family: var(--vel-font-roboto-bold); }
-
-.vds-font-roboto-black {
-  font-family: var(--vel-font-roboto-black); }

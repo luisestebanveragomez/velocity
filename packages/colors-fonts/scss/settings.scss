@@ -6,8 +6,8 @@
   @include vel--var-colors;
 
   /* var font-family */
-  @include vel--var-font;
+  --vel-font-roboto: 'Roboto';
 
 }
 
-@include vel--font-face('roboto');
+@include vel--font-face('Roboto');
