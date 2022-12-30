@@ -1,0 +1,35 @@
+@import './font';
+
+@mixin vel--var-font() {
+    @each $font-name, $font-value in $typeFont {
+        --vel-font-#{to-lower-case($font-name)}: '#{$font-name}';
+    }
+}
+
+@mixin vel--font-face($font) {
+    @at-root body {
+        font-family: var(--vel-font-#{$font}-regular);
+    }
+
+    @each $name, $value in $typeFont {
+        @font-face {
+            font-family: quote($font);
+            src: url('./assets/fonts/#{$font}/#{$name}.ttf');
+            font-weight: $value;
+            font-style: normal;
+        }
+    }
+}
+
+@mixin vel--class-font-family() {
+    @each $font-name, $font-value in $typeFont {
+        .vds-font-#{to-lower-case($font-name)} {
+            font-family: var(--vel-font-#{to-lower-case($font-name)});
+        };
+    }
+}
+
+@mixin vel--class-headline($font, $size, $weight: 'regular') {
+    font-family: var(--vel-font-#{to-lower-case($font)}-#{$weight});
+    font-size: $size;
+}

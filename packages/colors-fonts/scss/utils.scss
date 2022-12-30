@@ -1,0 +1,17 @@
+@function rem($size) {
+  $remSize: $size / $vs-space-unit;
+  @return #{$remSize}rem;
+}
+
+@function find-variable-color($colors, $find, $prefix: '--vel-') {
+  @each $palette, $weights in $colors {
+    @if $weights == $find {
+      @return #{$prefix}#{$palette}
+    }
+
+  }
+}
+
+@function set-transition($property, $duration) {
+  @return #{$property} #{$duration};
+}

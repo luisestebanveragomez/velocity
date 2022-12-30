@@ -1,0 +1,13 @@
+@import 'typo.scss';
+@import 'palette.scss';
+
+:root {
+  /* var colors */
+  @include vel--var-colors;
+
+  /* var font-family */
+  @include vel--var-font;
+
+}
+
+@include vel--font-face('roboto');

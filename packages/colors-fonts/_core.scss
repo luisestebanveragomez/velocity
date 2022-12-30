@@ -1,0 +1,10 @@
+@import 'scss/palette';
+@import 'scss/typo';
+@import 'scss/settings';
+
+
+/*** Class color ***/
+@include vel--class-color;
+
+/*** Class font ***/
+@include vel--class-font-family;

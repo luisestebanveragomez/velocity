@@ -1,0 +1,4082 @@
+@use 'sass:string';
+/**
+ * Do not edit directly
+ * Generated on Fri, 30 Dec 2022 18:19:59 GMT
+ */
+@use 'sass:string';
+/**
+ * Do not edit directly
+ * Generated on Fri, 30 Dec 2022 18:19:59 GMT
+ */
+:root {
+  /* var colors */
+  --vel-color-primary-1: #e6f7ff;
+  --vel-outline-color-primary-1: var(--vel-color-primary-1);
+  --vel-color-primary-2: #bae7ff;
+  --vel-outline-color-primary-2: var(--vel-color-primary-2);
+  --vel-color-primary-3: #91d5ff;
+  --vel-outline-color-primary-3: var(--vel-color-primary-3);
+  --vel-color-primary-4: #69c0ff;
+  --vel-outline-color-primary-4: var(--vel-color-primary-4);
+  --vel-color-primary-5: #40a9ff;
+  --vel-outline-color-primary-5: var(--vel-color-primary-5);
+  --vel-color-primary-6: #1890ff;
+  --vel-outline-color-primary-6: var(--vel-color-primary-6);
+  --vel-color-primary-7: #096dd9;
+  --vel-outline-color-primary-7: var(--vel-color-primary-7);
+  --vel-color-primary-8: #0050b3;
+  --vel-outline-color-primary-8: var(--vel-color-primary-8);
+  --vel-color-primary-9: #003a8c;
+  --vel-outline-color-primary-9: var(--vel-color-primary-9);
+  --vel-color-primary-10: #002766;
+  --vel-outline-color-primary-10: var(--vel-color-primary-10);
+  --vel-color-neutral-1: #ffffff;
+  --vel-outline-color-neutral-1: var(--vel-color-neutral-1);
+  --vel-color-neutral-2: #fafafa;
+  --vel-outline-color-neutral-2: var(--vel-color-neutral-2);
+  --vel-color-neutral-3: #f5f5f5;
+  --vel-outline-color-neutral-3: var(--vel-color-neutral-3);
+  --vel-color-neutral-4: #f0f0f0;
+  --vel-outline-color-neutral-4: var(--vel-color-neutral-4);
+  --vel-color-neutral-5: #d9d9d9;
+  --vel-outline-color-neutral-5: var(--vel-color-neutral-5);
+  --vel-color-neutral-6: #bfbfbf;
+  --vel-outline-color-neutral-6: var(--vel-color-neutral-6);
+  --vel-color-neutral-7: #8c8c8c;
+  --vel-outline-color-neutral-7: var(--vel-color-neutral-7);
+  --vel-color-neutral-8: #595959;
+  --vel-outline-color-neutral-8: var(--vel-color-neutral-8);
+  --vel-color-neutral-9: #434343;
+  --vel-outline-color-neutral-9: var(--vel-color-neutral-9);
+  --vel-color-neutral-10: #262626;
+  --vel-outline-color-neutral-10: var(--vel-color-neutral-10);
+  --vel-color-neutral-11: #1f1f1f;
+  --vel-outline-color-neutral-11: var(--vel-color-neutral-11);
+  --vel-color-neutral-12: #141414;
+  --vel-outline-color-neutral-12: var(--vel-color-neutral-12);
+  --vel-color-neutral-13: #000000;
+  --vel-outline-color-neutral-13: var(--vel-color-neutral-13);
+  --vel-color-daybreak-blue-1: #e6f7ff;
+  --vel-outline-color-daybreak-blue-1: var(--vel-color-daybreak-blue-1);
+  --vel-color-daybreak-blue-2: #bae7ff;
+  --vel-outline-color-daybreak-blue-2: var(--vel-color-daybreak-blue-2);
+  --vel-color-daybreak-blue-3: #91d5ff;
+  --vel-outline-color-daybreak-blue-3: var(--vel-color-daybreak-blue-3);
+  --vel-color-daybreak-blue-4: #69c0ff;
+  --vel-outline-color-daybreak-blue-4: var(--vel-color-daybreak-blue-4);
+  --vel-color-daybreak-blue-5: #40a9ff;
+  --vel-outline-color-daybreak-blue-5: var(--vel-color-daybreak-blue-5);
+  --vel-color-daybreak-blue-6: #1890ff;
+  --vel-outline-color-daybreak-blue-6: var(--vel-color-daybreak-blue-6);
+  --vel-color-daybreak-blue-7: #096dd9;
+  --vel-outline-color-daybreak-blue-7: var(--vel-color-daybreak-blue-7);
+  --vel-color-daybreak-blue-8: #0050b3;
+  --vel-outline-color-daybreak-blue-8: var(--vel-color-daybreak-blue-8);
+  --vel-color-daybreak-blue-9: #003a8c;
+  --vel-outline-color-daybreak-blue-9: var(--vel-color-daybreak-blue-9);
+  --vel-color-daybreak-blue-10: #002766;
+  --vel-outline-color-daybreak-blue-10: var(--vel-color-daybreak-blue-10);
+  --vel-color-dust-red-1: #fff1f0;
+  --vel-outline-color-dust-red-1: var(--vel-color-dust-red-1);
+  --vel-color-dust-red-2: #ffccc7;
+  --vel-outline-color-dust-red-2: var(--vel-color-dust-red-2);
+  --vel-color-dust-red-3: #ffa39e;
+  --vel-outline-color-dust-red-3: var(--vel-color-dust-red-3);
+  --vel-color-dust-red-4: #ff7875;
+  --vel-outline-color-dust-red-4: var(--vel-color-dust-red-4);
+  --vel-color-dust-red-5: #ff4d4f;
+  --vel-outline-color-dust-red-5: var(--vel-color-dust-red-5);
+  --vel-color-dust-red-6: #f5222d;
+  --vel-outline-color-dust-red-6: var(--vel-color-dust-red-6);
+  --vel-color-dust-red-7: #cf1322;
+  --vel-outline-color-dust-red-7: var(--vel-color-dust-red-7);
+  --vel-color-dust-red-8: #a8071a;
+  --vel-outline-color-dust-red-8: var(--vel-color-dust-red-8);
+  --vel-color-dust-red-9: #820014;
+  --vel-outline-color-dust-red-9: var(--vel-color-dust-red-9);
+  --vel-color-dust-red-10: #5c0011;
+  --vel-outline-color-dust-red-10: var(--vel-color-dust-red-10);
+  --vel-color-volcano-1: #fff2e8;
+  --vel-outline-color-volcano-1: var(--vel-color-volcano-1);
+  --vel-color-volcano-2: #ffd8bf;
+  --vel-outline-color-volcano-2: var(--vel-color-volcano-2);
+  --vel-color-volcano-3: #ffbb96;
+  --vel-outline-color-volcano-3: var(--vel-color-volcano-3);
+  --vel-color-volcano-4: #ff9c6e;
+  --vel-outline-color-volcano-4: var(--vel-color-volcano-4);
+  --vel-color-volcano-5: #ff7a45;
+  --vel-outline-color-volcano-5: var(--vel-color-volcano-5);
+  --vel-color-volcano-6: #fa541c;
+  --vel-outline-color-volcano-6: var(--vel-color-volcano-6);
+  --vel-color-volcano-7: #d4380d;
+  --vel-outline-color-volcano-7: var(--vel-color-volcano-7);
+  --vel-color-volcano-8: #ad2102;
+  --vel-outline-color-volcano-8: var(--vel-color-volcano-8);
+  --vel-color-volcano-9: #871400;
+  --vel-outline-color-volcano-9: var(--vel-color-volcano-9);
+  --vel-color-volcano-10: #610b00;
+  --vel-outline-color-volcano-10: var(--vel-color-volcano-10);
+  --vel-color-sunset-orange-1: #fff7e6;
+  --vel-outline-color-sunset-orange-1: var(--vel-color-sunset-orange-1);
+  --vel-color-sunset-orange-2: #ffe7ba;
+  --vel-outline-color-sunset-orange-2: var(--vel-color-sunset-orange-2);
+  --vel-color-sunset-orange-3: #ffd591;
+  --vel-outline-color-sunset-orange-3: var(--vel-color-sunset-orange-3);
+  --vel-color-sunset-orange-4: #ffc069;
+  --vel-outline-color-sunset-orange-4: var(--vel-color-sunset-orange-4);
+  --vel-color-sunset-orange-5: #ffa940;
+  --vel-outline-color-sunset-orange-5: var(--vel-color-sunset-orange-5);
+  --vel-color-sunset-orange-6: #fa8c16;
+  --vel-outline-color-sunset-orange-6: var(--vel-color-sunset-orange-6);
+  --vel-color-sunset-orange-7: #d46b08;
+  --vel-outline-color-sunset-orange-7: var(--vel-color-sunset-orange-7);
+  --vel-color-sunset-orange-8: #ad4e00;
+  --vel-outline-color-sunset-orange-8: var(--vel-color-sunset-orange-8);
+  --vel-color-sunset-orange-9: #873800;
+  --vel-outline-color-sunset-orange-9: var(--vel-color-sunset-orange-9);
+  --vel-color-sunset-orange-10: #612500;
+  --vel-outline-color-sunset-orange-10: var(--vel-color-sunset-orange-10);
+  --vel-color-calendula-gold-1: #fffbe6;
+  --vel-outline-color-calendula-gold-1: var(--vel-color-calendula-gold-1);
+  --vel-color-calendula-gold-2: #fff1b8;
+  --vel-outline-color-calendula-gold-2: var(--vel-color-calendula-gold-2);
+  --vel-color-calendula-gold-3: #ffe58f;
+  --vel-outline-color-calendula-gold-3: var(--vel-color-calendula-gold-3);
+  --vel-color-calendula-gold-4: #ffd666;
+  --vel-outline-color-calendula-gold-4: var(--vel-color-calendula-gold-4);
+  --vel-color-calendula-gold-5: #ffc53d;
+  --vel-outline-color-calendula-gold-5: var(--vel-color-calendula-gold-5);
+  --vel-color-calendula-gold-6: #faad14;
+  --vel-outline-color-calendula-gold-6: var(--vel-color-calendula-gold-6);
+  --vel-color-calendula-gold-7: #d48806;
+  --vel-outline-color-calendula-gold-7: var(--vel-color-calendula-gold-7);
+  --vel-color-calendula-gold-8: #ad6800;
+  --vel-outline-color-calendula-gold-8: var(--vel-color-calendula-gold-8);
+  --vel-color-calendula-gold-9: #874d00;
+  --vel-outline-color-calendula-gold-9: var(--vel-color-calendula-gold-9);
+  --vel-color-calendula-gold-10: #613400;
+  --vel-outline-color-calendula-gold-10: var(--vel-color-calendula-gold-10);
+  --vel-color-sunrise-yellow-1: #feffe6;
+  --vel-outline-color-sunrise-yellow-1: var(--vel-color-sunrise-yellow-1);
+  --vel-color-sunrise-yellow-2: #ffffb8;
+  --vel-outline-color-sunrise-yellow-2: var(--vel-color-sunrise-yellow-2);
+  --vel-color-sunrise-yellow-3: #fffb8f;
+  --vel-outline-color-sunrise-yellow-3: var(--vel-color-sunrise-yellow-3);
+  --vel-color-sunrise-yellow-4: #fff566;
+  --vel-outline-color-sunrise-yellow-4: var(--vel-color-sunrise-yellow-4);
+  --vel-color-sunrise-yellow-5: #ffec3d;
+  --vel-outline-color-sunrise-yellow-5: var(--vel-color-sunrise-yellow-5);
+  --vel-color-sunrise-yellow-6: #fadb14;
+  --vel-outline-color-sunrise-yellow-6: var(--vel-color-sunrise-yellow-6);
+  --vel-color-sunrise-yellow-7: #d4b106;
+  --vel-outline-color-sunrise-yellow-7: var(--vel-color-sunrise-yellow-7);
+  --vel-color-sunrise-yellow-8: #ad8b00;
+  --vel-outline-color-sunrise-yellow-8: var(--vel-color-sunrise-yellow-8);
+  --vel-color-sunrise-yellow-9: #876800;
+  --vel-outline-color-sunrise-yellow-9: var(--vel-color-sunrise-yellow-9);
+  --vel-color-sunrise-yellow-10: #614700;
+  --vel-outline-color-sunrise-yellow-10: var(--vel-color-sunrise-yellow-10);
+  --vel-color-lime-1: #fcffe6;
+  --vel-outline-color-lime-1: var(--vel-color-lime-1);
+  --vel-color-lime-2: #f4ffb8;
+  --vel-outline-color-lime-2: var(--vel-color-lime-2);
+  --vel-color-lime-3: #eaff8f;
+  --vel-outline-color-lime-3: var(--vel-color-lime-3);
+  --vel-color-lime-4: #d3f261;
+  --vel-outline-color-lime-4: var(--vel-color-lime-4);
+  --vel-color-lime-5: #bae637;
+  --vel-outline-color-lime-5: var(--vel-color-lime-5);
+  --vel-color-lime-6: #a0d911;
+  --vel-outline-color-lime-6: var(--vel-color-lime-6);
+  --vel-color-lime-7: #7cb305;
+  --vel-outline-color-lime-7: var(--vel-color-lime-7);
+  --vel-color-lime-8: #5b8c00;
+  --vel-outline-color-lime-8: var(--vel-color-lime-8);
+  --vel-color-lime-9: #3f6600;
+  --vel-outline-color-lime-9: var(--vel-color-lime-9);
+  --vel-color-lime-10: #254000;
+  --vel-outline-color-lime-10: var(--vel-color-lime-10);
+  --vel-color-polar-green-1: #f6ffed;
+  --vel-outline-color-polar-green-1: var(--vel-color-polar-green-1);
+  --vel-color-polar-green-2: #d9f7be;
+  --vel-outline-color-polar-green-2: var(--vel-color-polar-green-2);
+  --vel-color-polar-green-3: #b7eb8f;
+  --vel-outline-color-polar-green-3: var(--vel-color-polar-green-3);
+  --vel-color-polar-green-4: #95de64;
+  --vel-outline-color-polar-green-4: var(--vel-color-polar-green-4);
+  --vel-color-polar-green-5: #73d13d;
+  --vel-outline-color-polar-green-5: var(--vel-color-polar-green-5);
+  --vel-color-polar-green-6: #52c41a;
+  --vel-outline-color-polar-green-6: var(--vel-color-polar-green-6);
+  --vel-color-polar-green-7: #389e0d;
+  --vel-outline-color-polar-green-7: var(--vel-color-polar-green-7);
+  --vel-color-polar-green-8: #237804;
+  --vel-outline-color-polar-green-8: var(--vel-color-polar-green-8);
+  --vel-color-polar-green-9: #135200;
+  --vel-outline-color-polar-green-9: var(--vel-color-polar-green-9);
+  --vel-color-polar-green-10: #092b00;
+  --vel-outline-color-polar-green-10: var(--vel-color-polar-green-10);
+  --vel-color-cyan-1: #e6fffb;
+  --vel-outline-color-cyan-1: var(--vel-color-cyan-1);
+  --vel-color-cyan-2: #b5f5ec;
+  --vel-outline-color-cyan-2: var(--vel-color-cyan-2);
+  --vel-color-cyan-3: #87e8de;
+  --vel-outline-color-cyan-3: var(--vel-color-cyan-3);
+  --vel-color-cyan-4: #5cdbd3;
+  --vel-outline-color-cyan-4: var(--vel-color-cyan-4);
+  --vel-color-cyan-5: #36cfc9;
+  --vel-outline-color-cyan-5: var(--vel-color-cyan-5);
+  --vel-color-cyan-6: #13c2c2;
+  --vel-outline-color-cyan-6: var(--vel-color-cyan-6);
+  --vel-color-cyan-7: #08979c;
+  --vel-outline-color-cyan-7: var(--vel-color-cyan-7);
+  --vel-color-cyan-8: #006d75;
+  --vel-outline-color-cyan-8: var(--vel-color-cyan-8);
+  --vel-color-cyan-9: #00474f;
+  --vel-outline-color-cyan-9: var(--vel-color-cyan-9);
+  --vel-color-cyan-10: #002329;
+  --vel-outline-color-cyan-10: var(--vel-color-cyan-10);
+  --vel-color-geek-blue-1: #f0f5ff;
+  --vel-outline-color-geek-blue-1: var(--vel-color-geek-blue-1);
+  --vel-color-geek-blue-2: #d6e4ff;
+  --vel-outline-color-geek-blue-2: var(--vel-color-geek-blue-2);
+  --vel-color-geek-blue-3: #adc6ff;
+  --vel-outline-color-geek-blue-3: var(--vel-color-geek-blue-3);
+  --vel-color-geek-blue-4: #85a5ff;
+  --vel-outline-color-geek-blue-4: var(--vel-color-geek-blue-4);
+  --vel-color-geek-blue-5: #597ef7;
+  --vel-outline-color-geek-blue-5: var(--vel-color-geek-blue-5);
+  --vel-color-geek-blue-6: #2f54eb;
+  --vel-outline-color-geek-blue-6: var(--vel-color-geek-blue-6);
+  --vel-color-geek-blue-7: #1d39c4;
+  --vel-outline-color-geek-blue-7: var(--vel-color-geek-blue-7);
+  --vel-color-geek-blue-8: #10239e;
+  --vel-outline-color-geek-blue-8: var(--vel-color-geek-blue-8);
+  --vel-color-geek-blue-9: #061178;
+  --vel-outline-color-geek-blue-9: var(--vel-color-geek-blue-9);
+  --vel-color-geek-blue-10: #030852;
+  --vel-outline-color-geek-blue-10: var(--vel-color-geek-blue-10);
+  --vel-color-golden-purple-1: #f9f0ff;
+  --vel-outline-color-golden-purple-1: var(--vel-color-golden-purple-1);
+  --vel-color-golden-purple-2: #efdbff;
+  --vel-outline-color-golden-purple-2: var(--vel-color-golden-purple-2);
+  --vel-color-golden-purple-3: #d3adf7;
+  --vel-outline-color-golden-purple-3: var(--vel-color-golden-purple-3);
+  --vel-color-golden-purple-4: #b37feb;
+  --vel-outline-color-golden-purple-4: var(--vel-color-golden-purple-4);
+  --vel-color-golden-purple-5: #9254de;
+  --vel-outline-color-golden-purple-5: var(--vel-color-golden-purple-5);
+  --vel-color-golden-purple-6: #722ed1;
+  --vel-outline-color-golden-purple-6: var(--vel-color-golden-purple-6);
+  --vel-color-golden-purple-7: #531dab;
+  --vel-outline-color-golden-purple-7: var(--vel-color-golden-purple-7);
+  --vel-color-golden-purple-8: #391085;
+  --vel-outline-color-golden-purple-8: var(--vel-color-golden-purple-8);
+  --vel-color-golden-purple-9: #22075e;
+  --vel-outline-color-golden-purple-9: var(--vel-color-golden-purple-9);
+  --vel-color-golden-purple-10: #120338;
+  --vel-outline-color-golden-purple-10: var(--vel-color-golden-purple-10);
+  --vel-color-magenta-1: #fff0f6;
+  --vel-outline-color-magenta-1: var(--vel-color-magenta-1);
+  --vel-color-magenta-2: #ffd6e7;
+  --vel-outline-color-magenta-2: var(--vel-color-magenta-2);
+  --vel-color-magenta-3: #ffadd2;
+  --vel-outline-color-magenta-3: var(--vel-color-magenta-3);
+  --vel-color-magenta-4: #ff85c0;
+  --vel-outline-color-magenta-4: var(--vel-color-magenta-4);
+  --vel-color-magenta-5: #f759ab;
+  --vel-outline-color-magenta-5: var(--vel-color-magenta-5);
+  --vel-color-magenta-6: #eb2f96;
+  --vel-outline-color-magenta-6: var(--vel-color-magenta-6);
+  --vel-color-magenta-7: #c41d7f;
+  --vel-outline-color-magenta-7: var(--vel-color-magenta-7);
+  --vel-color-magenta-8: #9e1068;
+  --vel-outline-color-magenta-8: var(--vel-color-magenta-8);
+  --vel-color-magenta-9: #780650;
+  --vel-outline-color-magenta-9: var(--vel-color-magenta-9);
+  --vel-color-magenta-10: #520339;
+  --vel-outline-color-magenta-10: var(--vel-color-magenta-10);
+  /* var font-family */
+  --vel-font-roboto-thin: 'roboto-thin';
+  --vel-font-roboto-light: 'roboto-light';
+  --vel-font-roboto-regular: 'roboto-regular';
+  --vel-font-roboto-medium: 'roboto-medium';
+  --vel-font-roboto-bold: 'roboto-bold';
+  --vel-font-roboto-black: 'roboto-black'; }
+
+body {
+  font-family: var(--vel-font-roboto-regular); }
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto/roboto-thin.ttf");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto/roboto-light.ttf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto/roboto-regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto/roboto-medium.ttf");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto/roboto-bold.ttf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto/roboto-black.ttf");
+  font-weight: 900;
+  font-style: normal; }
+
+/*** Class color ***/
+/* Define background colors */
+.vel-bg-color-primary-1 {
+  background-color: var(--vel-color-primary-1); }
+
+/* Define text colors */
+.vel-text-color-primary-1 {
+  color: var(--vel-color-primary-1); }
+
+/* Define outline colors */
+.vel-outline-color-primary-1 {
+  border-color: var(--vel-color-primary-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-1); }
+
+.vel-outline-color-primary-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-1); }
+
+.vel-outline-color-primary-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-1); }
+
+/* Define background colors */
+.vel-bg-color-primary-2 {
+  background-color: var(--vel-color-primary-2); }
+
+/* Define text colors */
+.vel-text-color-primary-2 {
+  color: var(--vel-color-primary-2); }
+
+/* Define outline colors */
+.vel-outline-color-primary-2 {
+  border-color: var(--vel-color-primary-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-2); }
+
+.vel-outline-color-primary-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-2); }
+
+.vel-outline-color-primary-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-2); }
+
+/* Define background colors */
+.vel-bg-color-primary-3 {
+  background-color: var(--vel-color-primary-3); }
+
+/* Define text colors */
+.vel-text-color-primary-3 {
+  color: var(--vel-color-primary-3); }
+
+/* Define outline colors */
+.vel-outline-color-primary-3 {
+  border-color: var(--vel-color-primary-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-3); }
+
+.vel-outline-color-primary-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-3); }
+
+.vel-outline-color-primary-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-3); }
+
+/* Define background colors */
+.vel-bg-color-primary-4 {
+  background-color: var(--vel-color-primary-4); }
+
+/* Define text colors */
+.vel-text-color-primary-4 {
+  color: var(--vel-color-primary-4); }
+
+/* Define outline colors */
+.vel-outline-color-primary-4 {
+  border-color: var(--vel-color-primary-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-4); }
+
+.vel-outline-color-primary-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-4); }
+
+.vel-outline-color-primary-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-4); }
+
+/* Define background colors */
+.vel-bg-color-primary-5 {
+  background-color: var(--vel-color-primary-5); }
+
+/* Define text colors */
+.vel-text-color-primary-5 {
+  color: var(--vel-color-primary-5); }
+
+/* Define outline colors */
+.vel-outline-color-primary-5 {
+  border-color: var(--vel-color-primary-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-5); }
+
+.vel-outline-color-primary-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-5); }
+
+.vel-outline-color-primary-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-5); }
+
+/* Define background colors */
+.vel-bg-color-primary-6 {
+  background-color: var(--vel-color-primary-6); }
+
+/* Define text colors */
+.vel-text-color-primary-6 {
+  color: var(--vel-color-primary-6); }
+
+/* Define outline colors */
+.vel-outline-color-primary-6 {
+  border-color: var(--vel-color-primary-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-6); }
+
+.vel-outline-color-primary-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-6); }
+
+.vel-outline-color-primary-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-6); }
+
+/* Define background colors */
+.vel-bg-color-primary-7 {
+  background-color: var(--vel-color-primary-7); }
+
+/* Define text colors */
+.vel-text-color-primary-7 {
+  color: var(--vel-color-primary-7); }
+
+/* Define outline colors */
+.vel-outline-color-primary-7 {
+  border-color: var(--vel-color-primary-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-7); }
+
+.vel-outline-color-primary-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-7); }
+
+.vel-outline-color-primary-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-7); }
+
+/* Define background colors */
+.vel-bg-color-primary-8 {
+  background-color: var(--vel-color-primary-8); }
+
+/* Define text colors */
+.vel-text-color-primary-8 {
+  color: var(--vel-color-primary-8); }
+
+/* Define outline colors */
+.vel-outline-color-primary-8 {
+  border-color: var(--vel-color-primary-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-8); }
+
+.vel-outline-color-primary-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-8); }
+
+.vel-outline-color-primary-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-8); }
+
+/* Define background colors */
+.vel-bg-color-primary-9 {
+  background-color: var(--vel-color-primary-9); }
+
+/* Define text colors */
+.vel-text-color-primary-9 {
+  color: var(--vel-color-primary-9); }
+
+/* Define outline colors */
+.vel-outline-color-primary-9 {
+  border-color: var(--vel-color-primary-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-9); }
+
+.vel-outline-color-primary-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-9); }
+
+.vel-outline-color-primary-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-9); }
+
+/* Define background colors */
+.vel-bg-color-primary-10 {
+  background-color: var(--vel-color-primary-10); }
+
+/* Define text colors */
+.vel-text-color-primary-10 {
+  color: var(--vel-color-primary-10); }
+
+/* Define outline colors */
+.vel-outline-color-primary-10 {
+  border-color: var(--vel-color-primary-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-primary-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-10); }
+
+.vel-outline-color-primary-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-primary-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-10); }
+
+.vel-outline-color-primary-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-10); }
+
+/* Define background colors */
+.vel-bg-color-neutral-1 {
+  background-color: var(--vel-color-neutral-1); }
+
+/* Define text colors */
+.vel-text-color-neutral-1 {
+  color: var(--vel-color-neutral-1); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-1 {
+  border-color: var(--vel-color-neutral-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-1); }
+
+.vel-outline-color-neutral-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-1); }
+
+.vel-outline-color-neutral-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-1); }
+
+/* Define background colors */
+.vel-bg-color-neutral-2 {
+  background-color: var(--vel-color-neutral-2); }
+
+/* Define text colors */
+.vel-text-color-neutral-2 {
+  color: var(--vel-color-neutral-2); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-2 {
+  border-color: var(--vel-color-neutral-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-2); }
+
+.vel-outline-color-neutral-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-2); }
+
+.vel-outline-color-neutral-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-2); }
+
+/* Define background colors */
+.vel-bg-color-neutral-3 {
+  background-color: var(--vel-color-neutral-3); }
+
+/* Define text colors */
+.vel-text-color-neutral-3 {
+  color: var(--vel-color-neutral-3); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-3 {
+  border-color: var(--vel-color-neutral-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-3); }
+
+.vel-outline-color-neutral-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-3); }
+
+.vel-outline-color-neutral-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-3); }
+
+/* Define background colors */
+.vel-bg-color-neutral-4 {
+  background-color: var(--vel-color-neutral-4); }
+
+/* Define text colors */
+.vel-text-color-neutral-4 {
+  color: var(--vel-color-neutral-4); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-4 {
+  border-color: var(--vel-color-neutral-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-4); }
+
+.vel-outline-color-neutral-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-4); }
+
+.vel-outline-color-neutral-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-4); }
+
+/* Define background colors */
+.vel-bg-color-neutral-5 {
+  background-color: var(--vel-color-neutral-5); }
+
+/* Define text colors */
+.vel-text-color-neutral-5 {
+  color: var(--vel-color-neutral-5); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-5 {
+  border-color: var(--vel-color-neutral-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-5); }
+
+.vel-outline-color-neutral-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-5); }
+
+.vel-outline-color-neutral-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-5); }
+
+/* Define background colors */
+.vel-bg-color-neutral-6 {
+  background-color: var(--vel-color-neutral-6); }
+
+/* Define text colors */
+.vel-text-color-neutral-6 {
+  color: var(--vel-color-neutral-6); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-6 {
+  border-color: var(--vel-color-neutral-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-6); }
+
+.vel-outline-color-neutral-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-6); }
+
+.vel-outline-color-neutral-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-6); }
+
+/* Define background colors */
+.vel-bg-color-neutral-7 {
+  background-color: var(--vel-color-neutral-7); }
+
+/* Define text colors */
+.vel-text-color-neutral-7 {
+  color: var(--vel-color-neutral-7); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-7 {
+  border-color: var(--vel-color-neutral-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-7); }
+
+.vel-outline-color-neutral-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-7); }
+
+.vel-outline-color-neutral-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-7); }
+
+/* Define background colors */
+.vel-bg-color-neutral-8 {
+  background-color: var(--vel-color-neutral-8); }
+
+/* Define text colors */
+.vel-text-color-neutral-8 {
+  color: var(--vel-color-neutral-8); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-8 {
+  border-color: var(--vel-color-neutral-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-8); }
+
+.vel-outline-color-neutral-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-8); }
+
+.vel-outline-color-neutral-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-8); }
+
+/* Define background colors */
+.vel-bg-color-neutral-9 {
+  background-color: var(--vel-color-neutral-9); }
+
+/* Define text colors */
+.vel-text-color-neutral-9 {
+  color: var(--vel-color-neutral-9); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-9 {
+  border-color: var(--vel-color-neutral-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-9); }
+
+.vel-outline-color-neutral-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-9); }
+
+.vel-outline-color-neutral-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-9); }
+
+/* Define background colors */
+.vel-bg-color-neutral-10 {
+  background-color: var(--vel-color-neutral-10); }
+
+/* Define text colors */
+.vel-text-color-neutral-10 {
+  color: var(--vel-color-neutral-10); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-10 {
+  border-color: var(--vel-color-neutral-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-10); }
+
+.vel-outline-color-neutral-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-10); }
+
+.vel-outline-color-neutral-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-10); }
+
+/* Define background colors */
+.vel-bg-color-neutral-11 {
+  background-color: var(--vel-color-neutral-11); }
+
+/* Define text colors */
+.vel-text-color-neutral-11 {
+  color: var(--vel-color-neutral-11); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-11 {
+  border-color: var(--vel-color-neutral-11); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-11_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-11); }
+
+.vel-outline-color-neutral-11_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-11); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-11_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-11); }
+
+.vel-outline-color-neutral-11_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-11); }
+
+/* Define background colors */
+.vel-bg-color-neutral-12 {
+  background-color: var(--vel-color-neutral-12); }
+
+/* Define text colors */
+.vel-text-color-neutral-12 {
+  color: var(--vel-color-neutral-12); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-12 {
+  border-color: var(--vel-color-neutral-12); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-12_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-12); }
+
+.vel-outline-color-neutral-12_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-12); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-12_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-12); }
+
+.vel-outline-color-neutral-12_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-12); }
+
+/* Define background colors */
+.vel-bg-color-neutral-13 {
+  background-color: var(--vel-color-neutral-13); }
+
+/* Define text colors */
+.vel-text-color-neutral-13 {
+  color: var(--vel-color-neutral-13); }
+
+/* Define outline colors */
+.vel-outline-color-neutral-13 {
+  border-color: var(--vel-color-neutral-13); }
+
+/* Define outline solid colors */
+.vel-outline-color-neutral-13_solid_1 {
+  border: 0.0625rem solid var(--vel-color-neutral-13); }
+
+.vel-outline-color-neutral-13_solid_2 {
+  border: 0.09375rem solid var(--vel-color-neutral-13); }
+
+/* Define outline dashed colors */
+.vel-outline-color-neutral-13_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-neutral-13); }
+
+.vel-outline-color-neutral-13_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-neutral-13); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-1 {
+  background-color: var(--vel-color-primary-1); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-1 {
+  color: var(--vel-color-primary-1); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-1 {
+  border-color: var(--vel-color-primary-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-1); }
+
+.vel-outline-color-daybreak-blue-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-1); }
+
+.vel-outline-color-daybreak-blue-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-1); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-2 {
+  background-color: var(--vel-color-primary-2); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-2 {
+  color: var(--vel-color-primary-2); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-2 {
+  border-color: var(--vel-color-primary-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-2); }
+
+.vel-outline-color-daybreak-blue-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-2); }
+
+.vel-outline-color-daybreak-blue-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-2); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-3 {
+  background-color: var(--vel-color-primary-3); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-3 {
+  color: var(--vel-color-primary-3); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-3 {
+  border-color: var(--vel-color-primary-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-3); }
+
+.vel-outline-color-daybreak-blue-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-3); }
+
+.vel-outline-color-daybreak-blue-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-3); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-4 {
+  background-color: var(--vel-color-primary-4); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-4 {
+  color: var(--vel-color-primary-4); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-4 {
+  border-color: var(--vel-color-primary-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-4); }
+
+.vel-outline-color-daybreak-blue-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-4); }
+
+.vel-outline-color-daybreak-blue-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-4); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-5 {
+  background-color: var(--vel-color-primary-5); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-5 {
+  color: var(--vel-color-primary-5); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-5 {
+  border-color: var(--vel-color-primary-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-5); }
+
+.vel-outline-color-daybreak-blue-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-5); }
+
+.vel-outline-color-daybreak-blue-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-5); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-6 {
+  background-color: var(--vel-color-primary-6); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-6 {
+  color: var(--vel-color-primary-6); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-6 {
+  border-color: var(--vel-color-primary-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-6); }
+
+.vel-outline-color-daybreak-blue-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-6); }
+
+.vel-outline-color-daybreak-blue-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-6); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-7 {
+  background-color: var(--vel-color-primary-7); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-7 {
+  color: var(--vel-color-primary-7); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-7 {
+  border-color: var(--vel-color-primary-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-7); }
+
+.vel-outline-color-daybreak-blue-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-7); }
+
+.vel-outline-color-daybreak-blue-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-7); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-8 {
+  background-color: var(--vel-color-primary-8); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-8 {
+  color: var(--vel-color-primary-8); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-8 {
+  border-color: var(--vel-color-primary-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-8); }
+
+.vel-outline-color-daybreak-blue-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-8); }
+
+.vel-outline-color-daybreak-blue-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-8); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-9 {
+  background-color: var(--vel-color-primary-9); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-9 {
+  color: var(--vel-color-primary-9); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-9 {
+  border-color: var(--vel-color-primary-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-9); }
+
+.vel-outline-color-daybreak-blue-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-9); }
+
+.vel-outline-color-daybreak-blue-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-9); }
+
+/* Define background colors */
+.vel-bg-color-daybreak-blue-10 {
+  background-color: var(--vel-color-primary-10); }
+
+/* Define text colors */
+.vel-text-color-daybreak-blue-10 {
+  color: var(--vel-color-primary-10); }
+
+/* Define outline colors */
+.vel-outline-color-daybreak-blue-10 {
+  border-color: var(--vel-color-primary-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-daybreak-blue-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-primary-10); }
+
+.vel-outline-color-daybreak-blue-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-primary-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-daybreak-blue-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-primary-10); }
+
+.vel-outline-color-daybreak-blue-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-primary-10); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-1 {
+  background-color: var(--vel-color-dust-red-1); }
+
+/* Define text colors */
+.vel-text-color-dust-red-1 {
+  color: var(--vel-color-dust-red-1); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-1 {
+  border-color: var(--vel-color-dust-red-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-1); }
+
+.vel-outline-color-dust-red-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-1); }
+
+.vel-outline-color-dust-red-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-1); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-2 {
+  background-color: var(--vel-color-dust-red-2); }
+
+/* Define text colors */
+.vel-text-color-dust-red-2 {
+  color: var(--vel-color-dust-red-2); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-2 {
+  border-color: var(--vel-color-dust-red-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-2); }
+
+.vel-outline-color-dust-red-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-2); }
+
+.vel-outline-color-dust-red-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-2); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-3 {
+  background-color: var(--vel-color-dust-red-3); }
+
+/* Define text colors */
+.vel-text-color-dust-red-3 {
+  color: var(--vel-color-dust-red-3); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-3 {
+  border-color: var(--vel-color-dust-red-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-3); }
+
+.vel-outline-color-dust-red-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-3); }
+
+.vel-outline-color-dust-red-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-3); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-4 {
+  background-color: var(--vel-color-dust-red-4); }
+
+/* Define text colors */
+.vel-text-color-dust-red-4 {
+  color: var(--vel-color-dust-red-4); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-4 {
+  border-color: var(--vel-color-dust-red-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-4); }
+
+.vel-outline-color-dust-red-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-4); }
+
+.vel-outline-color-dust-red-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-4); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-5 {
+  background-color: var(--vel-color-dust-red-5); }
+
+/* Define text colors */
+.vel-text-color-dust-red-5 {
+  color: var(--vel-color-dust-red-5); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-5 {
+  border-color: var(--vel-color-dust-red-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-5); }
+
+.vel-outline-color-dust-red-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-5); }
+
+.vel-outline-color-dust-red-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-5); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-6 {
+  background-color: var(--vel-color-dust-red-6); }
+
+/* Define text colors */
+.vel-text-color-dust-red-6 {
+  color: var(--vel-color-dust-red-6); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-6 {
+  border-color: var(--vel-color-dust-red-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-6); }
+
+.vel-outline-color-dust-red-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-6); }
+
+.vel-outline-color-dust-red-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-6); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-7 {
+  background-color: var(--vel-color-dust-red-7); }
+
+/* Define text colors */
+.vel-text-color-dust-red-7 {
+  color: var(--vel-color-dust-red-7); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-7 {
+  border-color: var(--vel-color-dust-red-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-7); }
+
+.vel-outline-color-dust-red-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-7); }
+
+.vel-outline-color-dust-red-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-7); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-8 {
+  background-color: var(--vel-color-dust-red-8); }
+
+/* Define text colors */
+.vel-text-color-dust-red-8 {
+  color: var(--vel-color-dust-red-8); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-8 {
+  border-color: var(--vel-color-dust-red-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-8); }
+
+.vel-outline-color-dust-red-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-8); }
+
+.vel-outline-color-dust-red-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-8); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-9 {
+  background-color: var(--vel-color-dust-red-9); }
+
+/* Define text colors */
+.vel-text-color-dust-red-9 {
+  color: var(--vel-color-dust-red-9); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-9 {
+  border-color: var(--vel-color-dust-red-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-9); }
+
+.vel-outline-color-dust-red-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-9); }
+
+.vel-outline-color-dust-red-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-9); }
+
+/* Define background colors */
+.vel-bg-color-dust-red-10 {
+  background-color: var(--vel-color-dust-red-10); }
+
+/* Define text colors */
+.vel-text-color-dust-red-10 {
+  color: var(--vel-color-dust-red-10); }
+
+/* Define outline colors */
+.vel-outline-color-dust-red-10 {
+  border-color: var(--vel-color-dust-red-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-dust-red-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-dust-red-10); }
+
+.vel-outline-color-dust-red-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-dust-red-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-dust-red-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-dust-red-10); }
+
+.vel-outline-color-dust-red-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-dust-red-10); }
+
+/* Define background colors */
+.vel-bg-color-volcano-1 {
+  background-color: var(--vel-color-volcano-1); }
+
+/* Define text colors */
+.vel-text-color-volcano-1 {
+  color: var(--vel-color-volcano-1); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-1 {
+  border-color: var(--vel-color-volcano-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-1); }
+
+.vel-outline-color-volcano-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-1); }
+
+.vel-outline-color-volcano-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-1); }
+
+/* Define background colors */
+.vel-bg-color-volcano-2 {
+  background-color: var(--vel-color-volcano-2); }
+
+/* Define text colors */
+.vel-text-color-volcano-2 {
+  color: var(--vel-color-volcano-2); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-2 {
+  border-color: var(--vel-color-volcano-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-2); }
+
+.vel-outline-color-volcano-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-2); }
+
+.vel-outline-color-volcano-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-2); }
+
+/* Define background colors */
+.vel-bg-color-volcano-3 {
+  background-color: var(--vel-color-volcano-3); }
+
+/* Define text colors */
+.vel-text-color-volcano-3 {
+  color: var(--vel-color-volcano-3); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-3 {
+  border-color: var(--vel-color-volcano-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-3); }
+
+.vel-outline-color-volcano-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-3); }
+
+.vel-outline-color-volcano-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-3); }
+
+/* Define background colors */
+.vel-bg-color-volcano-4 {
+  background-color: var(--vel-color-volcano-4); }
+
+/* Define text colors */
+.vel-text-color-volcano-4 {
+  color: var(--vel-color-volcano-4); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-4 {
+  border-color: var(--vel-color-volcano-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-4); }
+
+.vel-outline-color-volcano-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-4); }
+
+.vel-outline-color-volcano-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-4); }
+
+/* Define background colors */
+.vel-bg-color-volcano-5 {
+  background-color: var(--vel-color-volcano-5); }
+
+/* Define text colors */
+.vel-text-color-volcano-5 {
+  color: var(--vel-color-volcano-5); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-5 {
+  border-color: var(--vel-color-volcano-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-5); }
+
+.vel-outline-color-volcano-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-5); }
+
+.vel-outline-color-volcano-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-5); }
+
+/* Define background colors */
+.vel-bg-color-volcano-6 {
+  background-color: var(--vel-color-volcano-6); }
+
+/* Define text colors */
+.vel-text-color-volcano-6 {
+  color: var(--vel-color-volcano-6); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-6 {
+  border-color: var(--vel-color-volcano-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-6); }
+
+.vel-outline-color-volcano-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-6); }
+
+.vel-outline-color-volcano-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-6); }
+
+/* Define background colors */
+.vel-bg-color-volcano-7 {
+  background-color: var(--vel-color-volcano-7); }
+
+/* Define text colors */
+.vel-text-color-volcano-7 {
+  color: var(--vel-color-volcano-7); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-7 {
+  border-color: var(--vel-color-volcano-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-7); }
+
+.vel-outline-color-volcano-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-7); }
+
+.vel-outline-color-volcano-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-7); }
+
+/* Define background colors */
+.vel-bg-color-volcano-8 {
+  background-color: var(--vel-color-volcano-8); }
+
+/* Define text colors */
+.vel-text-color-volcano-8 {
+  color: var(--vel-color-volcano-8); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-8 {
+  border-color: var(--vel-color-volcano-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-8); }
+
+.vel-outline-color-volcano-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-8); }
+
+.vel-outline-color-volcano-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-8); }
+
+/* Define background colors */
+.vel-bg-color-volcano-9 {
+  background-color: var(--vel-color-volcano-9); }
+
+/* Define text colors */
+.vel-text-color-volcano-9 {
+  color: var(--vel-color-volcano-9); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-9 {
+  border-color: var(--vel-color-volcano-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-9); }
+
+.vel-outline-color-volcano-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-9); }
+
+.vel-outline-color-volcano-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-9); }
+
+/* Define background colors */
+.vel-bg-color-volcano-10 {
+  background-color: var(--vel-color-volcano-10); }
+
+/* Define text colors */
+.vel-text-color-volcano-10 {
+  color: var(--vel-color-volcano-10); }
+
+/* Define outline colors */
+.vel-outline-color-volcano-10 {
+  border-color: var(--vel-color-volcano-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-volcano-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-volcano-10); }
+
+.vel-outline-color-volcano-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-volcano-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-volcano-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-volcano-10); }
+
+.vel-outline-color-volcano-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-volcano-10); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-1 {
+  background-color: var(--vel-color-sunset-orange-1); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-1 {
+  color: var(--vel-color-sunset-orange-1); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-1 {
+  border-color: var(--vel-color-sunset-orange-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-1); }
+
+.vel-outline-color-sunset-orange-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-1); }
+
+.vel-outline-color-sunset-orange-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-1); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-2 {
+  background-color: var(--vel-color-sunset-orange-2); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-2 {
+  color: var(--vel-color-sunset-orange-2); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-2 {
+  border-color: var(--vel-color-sunset-orange-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-2); }
+
+.vel-outline-color-sunset-orange-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-2); }
+
+.vel-outline-color-sunset-orange-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-2); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-3 {
+  background-color: var(--vel-color-sunset-orange-3); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-3 {
+  color: var(--vel-color-sunset-orange-3); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-3 {
+  border-color: var(--vel-color-sunset-orange-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-3); }
+
+.vel-outline-color-sunset-orange-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-3); }
+
+.vel-outline-color-sunset-orange-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-3); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-4 {
+  background-color: var(--vel-color-sunset-orange-4); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-4 {
+  color: var(--vel-color-sunset-orange-4); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-4 {
+  border-color: var(--vel-color-sunset-orange-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-4); }
+
+.vel-outline-color-sunset-orange-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-4); }
+
+.vel-outline-color-sunset-orange-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-4); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-5 {
+  background-color: var(--vel-color-sunset-orange-5); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-5 {
+  color: var(--vel-color-sunset-orange-5); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-5 {
+  border-color: var(--vel-color-sunset-orange-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-5); }
+
+.vel-outline-color-sunset-orange-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-5); }
+
+.vel-outline-color-sunset-orange-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-5); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-6 {
+  background-color: var(--vel-color-sunset-orange-6); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-6 {
+  color: var(--vel-color-sunset-orange-6); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-6 {
+  border-color: var(--vel-color-sunset-orange-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-6); }
+
+.vel-outline-color-sunset-orange-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-6); }
+
+.vel-outline-color-sunset-orange-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-6); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-7 {
+  background-color: var(--vel-color-sunset-orange-7); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-7 {
+  color: var(--vel-color-sunset-orange-7); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-7 {
+  border-color: var(--vel-color-sunset-orange-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-7); }
+
+.vel-outline-color-sunset-orange-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-7); }
+
+.vel-outline-color-sunset-orange-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-7); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-8 {
+  background-color: var(--vel-color-sunset-orange-8); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-8 {
+  color: var(--vel-color-sunset-orange-8); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-8 {
+  border-color: var(--vel-color-sunset-orange-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-8); }
+
+.vel-outline-color-sunset-orange-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-8); }
+
+.vel-outline-color-sunset-orange-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-8); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-9 {
+  background-color: var(--vel-color-sunset-orange-9); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-9 {
+  color: var(--vel-color-sunset-orange-9); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-9 {
+  border-color: var(--vel-color-sunset-orange-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-9); }
+
+.vel-outline-color-sunset-orange-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-9); }
+
+.vel-outline-color-sunset-orange-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-9); }
+
+/* Define background colors */
+.vel-bg-color-sunset-orange-10 {
+  background-color: var(--vel-color-sunset-orange-10); }
+
+/* Define text colors */
+.vel-text-color-sunset-orange-10 {
+  color: var(--vel-color-sunset-orange-10); }
+
+/* Define outline colors */
+.vel-outline-color-sunset-orange-10 {
+  border-color: var(--vel-color-sunset-orange-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunset-orange-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunset-orange-10); }
+
+.vel-outline-color-sunset-orange-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunset-orange-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunset-orange-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunset-orange-10); }
+
+.vel-outline-color-sunset-orange-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunset-orange-10); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-1 {
+  background-color: var(--vel-color-calendula-gold-1); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-1 {
+  color: var(--vel-color-calendula-gold-1); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-1 {
+  border-color: var(--vel-color-calendula-gold-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-1); }
+
+.vel-outline-color-calendula-gold-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-1); }
+
+.vel-outline-color-calendula-gold-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-1); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-2 {
+  background-color: var(--vel-color-calendula-gold-2); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-2 {
+  color: var(--vel-color-calendula-gold-2); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-2 {
+  border-color: var(--vel-color-calendula-gold-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-2); }
+
+.vel-outline-color-calendula-gold-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-2); }
+
+.vel-outline-color-calendula-gold-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-2); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-3 {
+  background-color: var(--vel-color-calendula-gold-3); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-3 {
+  color: var(--vel-color-calendula-gold-3); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-3 {
+  border-color: var(--vel-color-calendula-gold-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-3); }
+
+.vel-outline-color-calendula-gold-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-3); }
+
+.vel-outline-color-calendula-gold-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-3); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-4 {
+  background-color: var(--vel-color-calendula-gold-4); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-4 {
+  color: var(--vel-color-calendula-gold-4); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-4 {
+  border-color: var(--vel-color-calendula-gold-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-4); }
+
+.vel-outline-color-calendula-gold-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-4); }
+
+.vel-outline-color-calendula-gold-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-4); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-5 {
+  background-color: var(--vel-color-calendula-gold-5); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-5 {
+  color: var(--vel-color-calendula-gold-5); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-5 {
+  border-color: var(--vel-color-calendula-gold-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-5); }
+
+.vel-outline-color-calendula-gold-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-5); }
+
+.vel-outline-color-calendula-gold-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-5); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-6 {
+  background-color: var(--vel-color-calendula-gold-6); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-6 {
+  color: var(--vel-color-calendula-gold-6); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-6 {
+  border-color: var(--vel-color-calendula-gold-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-6); }
+
+.vel-outline-color-calendula-gold-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-6); }
+
+.vel-outline-color-calendula-gold-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-6); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-7 {
+  background-color: var(--vel-color-calendula-gold-7); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-7 {
+  color: var(--vel-color-calendula-gold-7); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-7 {
+  border-color: var(--vel-color-calendula-gold-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-7); }
+
+.vel-outline-color-calendula-gold-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-7); }
+
+.vel-outline-color-calendula-gold-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-7); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-8 {
+  background-color: var(--vel-color-calendula-gold-8); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-8 {
+  color: var(--vel-color-calendula-gold-8); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-8 {
+  border-color: var(--vel-color-calendula-gold-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-8); }
+
+.vel-outline-color-calendula-gold-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-8); }
+
+.vel-outline-color-calendula-gold-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-8); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-9 {
+  background-color: var(--vel-color-calendula-gold-9); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-9 {
+  color: var(--vel-color-calendula-gold-9); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-9 {
+  border-color: var(--vel-color-calendula-gold-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-9); }
+
+.vel-outline-color-calendula-gold-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-9); }
+
+.vel-outline-color-calendula-gold-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-9); }
+
+/* Define background colors */
+.vel-bg-color-calendula-gold-10 {
+  background-color: var(--vel-color-calendula-gold-10); }
+
+/* Define text colors */
+.vel-text-color-calendula-gold-10 {
+  color: var(--vel-color-calendula-gold-10); }
+
+/* Define outline colors */
+.vel-outline-color-calendula-gold-10 {
+  border-color: var(--vel-color-calendula-gold-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-calendula-gold-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-calendula-gold-10); }
+
+.vel-outline-color-calendula-gold-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-calendula-gold-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-calendula-gold-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-calendula-gold-10); }
+
+.vel-outline-color-calendula-gold-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-calendula-gold-10); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-1 {
+  background-color: var(--vel-color-sunrise-yellow-1); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-1 {
+  color: var(--vel-color-sunrise-yellow-1); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-1 {
+  border-color: var(--vel-color-sunrise-yellow-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-1); }
+
+.vel-outline-color-sunrise-yellow-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-1); }
+
+.vel-outline-color-sunrise-yellow-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-1); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-2 {
+  background-color: var(--vel-color-sunrise-yellow-2); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-2 {
+  color: var(--vel-color-sunrise-yellow-2); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-2 {
+  border-color: var(--vel-color-sunrise-yellow-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-2); }
+
+.vel-outline-color-sunrise-yellow-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-2); }
+
+.vel-outline-color-sunrise-yellow-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-2); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-3 {
+  background-color: var(--vel-color-sunrise-yellow-3); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-3 {
+  color: var(--vel-color-sunrise-yellow-3); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-3 {
+  border-color: var(--vel-color-sunrise-yellow-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-3); }
+
+.vel-outline-color-sunrise-yellow-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-3); }
+
+.vel-outline-color-sunrise-yellow-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-3); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-4 {
+  background-color: var(--vel-color-sunrise-yellow-4); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-4 {
+  color: var(--vel-color-sunrise-yellow-4); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-4 {
+  border-color: var(--vel-color-sunrise-yellow-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-4); }
+
+.vel-outline-color-sunrise-yellow-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-4); }
+
+.vel-outline-color-sunrise-yellow-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-4); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-5 {
+  background-color: var(--vel-color-sunrise-yellow-5); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-5 {
+  color: var(--vel-color-sunrise-yellow-5); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-5 {
+  border-color: var(--vel-color-sunrise-yellow-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-5); }
+
+.vel-outline-color-sunrise-yellow-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-5); }
+
+.vel-outline-color-sunrise-yellow-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-5); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-6 {
+  background-color: var(--vel-color-sunrise-yellow-6); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-6 {
+  color: var(--vel-color-sunrise-yellow-6); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-6 {
+  border-color: var(--vel-color-sunrise-yellow-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-6); }
+
+.vel-outline-color-sunrise-yellow-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-6); }
+
+.vel-outline-color-sunrise-yellow-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-6); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-7 {
+  background-color: var(--vel-color-sunrise-yellow-7); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-7 {
+  color: var(--vel-color-sunrise-yellow-7); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-7 {
+  border-color: var(--vel-color-sunrise-yellow-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-7); }
+
+.vel-outline-color-sunrise-yellow-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-7); }
+
+.vel-outline-color-sunrise-yellow-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-7); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-8 {
+  background-color: var(--vel-color-sunrise-yellow-8); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-8 {
+  color: var(--vel-color-sunrise-yellow-8); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-8 {
+  border-color: var(--vel-color-sunrise-yellow-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-8); }
+
+.vel-outline-color-sunrise-yellow-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-8); }
+
+.vel-outline-color-sunrise-yellow-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-8); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-9 {
+  background-color: var(--vel-color-sunrise-yellow-9); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-9 {
+  color: var(--vel-color-sunrise-yellow-9); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-9 {
+  border-color: var(--vel-color-sunrise-yellow-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-9); }
+
+.vel-outline-color-sunrise-yellow-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-9); }
+
+.vel-outline-color-sunrise-yellow-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-9); }
+
+/* Define background colors */
+.vel-bg-color-sunrise-yellow-10 {
+  background-color: var(--vel-color-sunrise-yellow-10); }
+
+/* Define text colors */
+.vel-text-color-sunrise-yellow-10 {
+  color: var(--vel-color-sunrise-yellow-10); }
+
+/* Define outline colors */
+.vel-outline-color-sunrise-yellow-10 {
+  border-color: var(--vel-color-sunrise-yellow-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-sunrise-yellow-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-sunrise-yellow-10); }
+
+.vel-outline-color-sunrise-yellow-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-sunrise-yellow-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-sunrise-yellow-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-sunrise-yellow-10); }
+
+.vel-outline-color-sunrise-yellow-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-sunrise-yellow-10); }
+
+/* Define background colors */
+.vel-bg-color-lime-1 {
+  background-color: var(--vel-color-lime-1); }
+
+/* Define text colors */
+.vel-text-color-lime-1 {
+  color: var(--vel-color-lime-1); }
+
+/* Define outline colors */
+.vel-outline-color-lime-1 {
+  border-color: var(--vel-color-lime-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-1); }
+
+.vel-outline-color-lime-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-1); }
+
+.vel-outline-color-lime-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-1); }
+
+/* Define background colors */
+.vel-bg-color-lime-2 {
+  background-color: var(--vel-color-lime-2); }
+
+/* Define text colors */
+.vel-text-color-lime-2 {
+  color: var(--vel-color-lime-2); }
+
+/* Define outline colors */
+.vel-outline-color-lime-2 {
+  border-color: var(--vel-color-lime-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-2); }
+
+.vel-outline-color-lime-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-2); }
+
+.vel-outline-color-lime-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-2); }
+
+/* Define background colors */
+.vel-bg-color-lime-3 {
+  background-color: var(--vel-color-lime-3); }
+
+/* Define text colors */
+.vel-text-color-lime-3 {
+  color: var(--vel-color-lime-3); }
+
+/* Define outline colors */
+.vel-outline-color-lime-3 {
+  border-color: var(--vel-color-lime-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-3); }
+
+.vel-outline-color-lime-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-3); }
+
+.vel-outline-color-lime-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-3); }
+
+/* Define background colors */
+.vel-bg-color-lime-4 {
+  background-color: var(--vel-color-lime-4); }
+
+/* Define text colors */
+.vel-text-color-lime-4 {
+  color: var(--vel-color-lime-4); }
+
+/* Define outline colors */
+.vel-outline-color-lime-4 {
+  border-color: var(--vel-color-lime-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-4); }
+
+.vel-outline-color-lime-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-4); }
+
+.vel-outline-color-lime-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-4); }
+
+/* Define background colors */
+.vel-bg-color-lime-5 {
+  background-color: var(--vel-color-lime-5); }
+
+/* Define text colors */
+.vel-text-color-lime-5 {
+  color: var(--vel-color-lime-5); }
+
+/* Define outline colors */
+.vel-outline-color-lime-5 {
+  border-color: var(--vel-color-lime-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-5); }
+
+.vel-outline-color-lime-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-5); }
+
+.vel-outline-color-lime-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-5); }
+
+/* Define background colors */
+.vel-bg-color-lime-6 {
+  background-color: var(--vel-color-lime-6); }
+
+/* Define text colors */
+.vel-text-color-lime-6 {
+  color: var(--vel-color-lime-6); }
+
+/* Define outline colors */
+.vel-outline-color-lime-6 {
+  border-color: var(--vel-color-lime-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-6); }
+
+.vel-outline-color-lime-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-6); }
+
+.vel-outline-color-lime-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-6); }
+
+/* Define background colors */
+.vel-bg-color-lime-7 {
+  background-color: var(--vel-color-lime-7); }
+
+/* Define text colors */
+.vel-text-color-lime-7 {
+  color: var(--vel-color-lime-7); }
+
+/* Define outline colors */
+.vel-outline-color-lime-7 {
+  border-color: var(--vel-color-lime-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-7); }
+
+.vel-outline-color-lime-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-7); }
+
+.vel-outline-color-lime-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-7); }
+
+/* Define background colors */
+.vel-bg-color-lime-8 {
+  background-color: var(--vel-color-lime-8); }
+
+/* Define text colors */
+.vel-text-color-lime-8 {
+  color: var(--vel-color-lime-8); }
+
+/* Define outline colors */
+.vel-outline-color-lime-8 {
+  border-color: var(--vel-color-lime-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-8); }
+
+.vel-outline-color-lime-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-8); }
+
+.vel-outline-color-lime-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-8); }
+
+/* Define background colors */
+.vel-bg-color-lime-9 {
+  background-color: var(--vel-color-lime-9); }
+
+/* Define text colors */
+.vel-text-color-lime-9 {
+  color: var(--vel-color-lime-9); }
+
+/* Define outline colors */
+.vel-outline-color-lime-9 {
+  border-color: var(--vel-color-lime-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-9); }
+
+.vel-outline-color-lime-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-9); }
+
+.vel-outline-color-lime-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-9); }
+
+/* Define background colors */
+.vel-bg-color-lime-10 {
+  background-color: var(--vel-color-lime-10); }
+
+/* Define text colors */
+.vel-text-color-lime-10 {
+  color: var(--vel-color-lime-10); }
+
+/* Define outline colors */
+.vel-outline-color-lime-10 {
+  border-color: var(--vel-color-lime-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-lime-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-lime-10); }
+
+.vel-outline-color-lime-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-lime-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-lime-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-lime-10); }
+
+.vel-outline-color-lime-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-lime-10); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-1 {
+  background-color: var(--vel-color-polar-green-1); }
+
+/* Define text colors */
+.vel-text-color-polar-green-1 {
+  color: var(--vel-color-polar-green-1); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-1 {
+  border-color: var(--vel-color-polar-green-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-1); }
+
+.vel-outline-color-polar-green-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-1); }
+
+.vel-outline-color-polar-green-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-1); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-2 {
+  background-color: var(--vel-color-polar-green-2); }
+
+/* Define text colors */
+.vel-text-color-polar-green-2 {
+  color: var(--vel-color-polar-green-2); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-2 {
+  border-color: var(--vel-color-polar-green-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-2); }
+
+.vel-outline-color-polar-green-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-2); }
+
+.vel-outline-color-polar-green-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-2); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-3 {
+  background-color: var(--vel-color-polar-green-3); }
+
+/* Define text colors */
+.vel-text-color-polar-green-3 {
+  color: var(--vel-color-polar-green-3); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-3 {
+  border-color: var(--vel-color-polar-green-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-3); }
+
+.vel-outline-color-polar-green-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-3); }
+
+.vel-outline-color-polar-green-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-3); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-4 {
+  background-color: var(--vel-color-polar-green-4); }
+
+/* Define text colors */
+.vel-text-color-polar-green-4 {
+  color: var(--vel-color-polar-green-4); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-4 {
+  border-color: var(--vel-color-polar-green-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-4); }
+
+.vel-outline-color-polar-green-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-4); }
+
+.vel-outline-color-polar-green-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-4); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-5 {
+  background-color: var(--vel-color-polar-green-5); }
+
+/* Define text colors */
+.vel-text-color-polar-green-5 {
+  color: var(--vel-color-polar-green-5); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-5 {
+  border-color: var(--vel-color-polar-green-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-5); }
+
+.vel-outline-color-polar-green-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-5); }
+
+.vel-outline-color-polar-green-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-5); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-6 {
+  background-color: var(--vel-color-polar-green-6); }
+
+/* Define text colors */
+.vel-text-color-polar-green-6 {
+  color: var(--vel-color-polar-green-6); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-6 {
+  border-color: var(--vel-color-polar-green-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-6); }
+
+.vel-outline-color-polar-green-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-6); }
+
+.vel-outline-color-polar-green-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-6); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-7 {
+  background-color: var(--vel-color-polar-green-7); }
+
+/* Define text colors */
+.vel-text-color-polar-green-7 {
+  color: var(--vel-color-polar-green-7); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-7 {
+  border-color: var(--vel-color-polar-green-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-7); }
+
+.vel-outline-color-polar-green-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-7); }
+
+.vel-outline-color-polar-green-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-7); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-8 {
+  background-color: var(--vel-color-polar-green-8); }
+
+/* Define text colors */
+.vel-text-color-polar-green-8 {
+  color: var(--vel-color-polar-green-8); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-8 {
+  border-color: var(--vel-color-polar-green-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-8); }
+
+.vel-outline-color-polar-green-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-8); }
+
+.vel-outline-color-polar-green-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-8); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-9 {
+  background-color: var(--vel-color-polar-green-9); }
+
+/* Define text colors */
+.vel-text-color-polar-green-9 {
+  color: var(--vel-color-polar-green-9); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-9 {
+  border-color: var(--vel-color-polar-green-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-9); }
+
+.vel-outline-color-polar-green-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-9); }
+
+.vel-outline-color-polar-green-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-9); }
+
+/* Define background colors */
+.vel-bg-color-polar-green-10 {
+  background-color: var(--vel-color-polar-green-10); }
+
+/* Define text colors */
+.vel-text-color-polar-green-10 {
+  color: var(--vel-color-polar-green-10); }
+
+/* Define outline colors */
+.vel-outline-color-polar-green-10 {
+  border-color: var(--vel-color-polar-green-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-polar-green-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-polar-green-10); }
+
+.vel-outline-color-polar-green-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-polar-green-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-polar-green-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-polar-green-10); }
+
+.vel-outline-color-polar-green-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-polar-green-10); }
+
+/* Define background colors */
+.vel-bg-color-cyan-1 {
+  background-color: var(--vel-color-cyan-1); }
+
+/* Define text colors */
+.vel-text-color-cyan-1 {
+  color: var(--vel-color-cyan-1); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-1 {
+  border-color: var(--vel-color-cyan-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-1); }
+
+.vel-outline-color-cyan-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-1); }
+
+.vel-outline-color-cyan-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-1); }
+
+/* Define background colors */
+.vel-bg-color-cyan-2 {
+  background-color: var(--vel-color-cyan-2); }
+
+/* Define text colors */
+.vel-text-color-cyan-2 {
+  color: var(--vel-color-cyan-2); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-2 {
+  border-color: var(--vel-color-cyan-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-2); }
+
+.vel-outline-color-cyan-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-2); }
+
+.vel-outline-color-cyan-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-2); }
+
+/* Define background colors */
+.vel-bg-color-cyan-3 {
+  background-color: var(--vel-color-cyan-3); }
+
+/* Define text colors */
+.vel-text-color-cyan-3 {
+  color: var(--vel-color-cyan-3); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-3 {
+  border-color: var(--vel-color-cyan-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-3); }
+
+.vel-outline-color-cyan-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-3); }
+
+.vel-outline-color-cyan-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-3); }
+
+/* Define background colors */
+.vel-bg-color-cyan-4 {
+  background-color: var(--vel-color-cyan-4); }
+
+/* Define text colors */
+.vel-text-color-cyan-4 {
+  color: var(--vel-color-cyan-4); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-4 {
+  border-color: var(--vel-color-cyan-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-4); }
+
+.vel-outline-color-cyan-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-4); }
+
+.vel-outline-color-cyan-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-4); }
+
+/* Define background colors */
+.vel-bg-color-cyan-5 {
+  background-color: var(--vel-color-cyan-5); }
+
+/* Define text colors */
+.vel-text-color-cyan-5 {
+  color: var(--vel-color-cyan-5); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-5 {
+  border-color: var(--vel-color-cyan-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-5); }
+
+.vel-outline-color-cyan-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-5); }
+
+.vel-outline-color-cyan-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-5); }
+
+/* Define background colors */
+.vel-bg-color-cyan-6 {
+  background-color: var(--vel-color-cyan-6); }
+
+/* Define text colors */
+.vel-text-color-cyan-6 {
+  color: var(--vel-color-cyan-6); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-6 {
+  border-color: var(--vel-color-cyan-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-6); }
+
+.vel-outline-color-cyan-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-6); }
+
+.vel-outline-color-cyan-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-6); }
+
+/* Define background colors */
+.vel-bg-color-cyan-7 {
+  background-color: var(--vel-color-cyan-7); }
+
+/* Define text colors */
+.vel-text-color-cyan-7 {
+  color: var(--vel-color-cyan-7); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-7 {
+  border-color: var(--vel-color-cyan-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-7); }
+
+.vel-outline-color-cyan-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-7); }
+
+.vel-outline-color-cyan-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-7); }
+
+/* Define background colors */
+.vel-bg-color-cyan-8 {
+  background-color: var(--vel-color-cyan-8); }
+
+/* Define text colors */
+.vel-text-color-cyan-8 {
+  color: var(--vel-color-cyan-8); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-8 {
+  border-color: var(--vel-color-cyan-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-8); }
+
+.vel-outline-color-cyan-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-8); }
+
+.vel-outline-color-cyan-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-8); }
+
+/* Define background colors */
+.vel-bg-color-cyan-9 {
+  background-color: var(--vel-color-cyan-9); }
+
+/* Define text colors */
+.vel-text-color-cyan-9 {
+  color: var(--vel-color-cyan-9); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-9 {
+  border-color: var(--vel-color-cyan-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-9); }
+
+.vel-outline-color-cyan-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-9); }
+
+.vel-outline-color-cyan-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-9); }
+
+/* Define background colors */
+.vel-bg-color-cyan-10 {
+  background-color: var(--vel-color-cyan-10); }
+
+/* Define text colors */
+.vel-text-color-cyan-10 {
+  color: var(--vel-color-cyan-10); }
+
+/* Define outline colors */
+.vel-outline-color-cyan-10 {
+  border-color: var(--vel-color-cyan-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-cyan-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-cyan-10); }
+
+.vel-outline-color-cyan-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-cyan-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-cyan-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-cyan-10); }
+
+.vel-outline-color-cyan-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-cyan-10); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-1 {
+  background-color: var(--vel-color-geek-blue-1); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-1 {
+  color: var(--vel-color-geek-blue-1); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-1 {
+  border-color: var(--vel-color-geek-blue-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-1); }
+
+.vel-outline-color-geek-blue-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-1); }
+
+.vel-outline-color-geek-blue-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-1); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-2 {
+  background-color: var(--vel-color-geek-blue-2); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-2 {
+  color: var(--vel-color-geek-blue-2); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-2 {
+  border-color: var(--vel-color-geek-blue-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-2); }
+
+.vel-outline-color-geek-blue-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-2); }
+
+.vel-outline-color-geek-blue-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-2); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-3 {
+  background-color: var(--vel-color-geek-blue-3); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-3 {
+  color: var(--vel-color-geek-blue-3); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-3 {
+  border-color: var(--vel-color-geek-blue-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-3); }
+
+.vel-outline-color-geek-blue-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-3); }
+
+.vel-outline-color-geek-blue-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-3); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-4 {
+  background-color: var(--vel-color-geek-blue-4); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-4 {
+  color: var(--vel-color-geek-blue-4); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-4 {
+  border-color: var(--vel-color-geek-blue-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-4); }
+
+.vel-outline-color-geek-blue-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-4); }
+
+.vel-outline-color-geek-blue-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-4); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-5 {
+  background-color: var(--vel-color-geek-blue-5); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-5 {
+  color: var(--vel-color-geek-blue-5); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-5 {
+  border-color: var(--vel-color-geek-blue-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-5); }
+
+.vel-outline-color-geek-blue-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-5); }
+
+.vel-outline-color-geek-blue-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-5); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-6 {
+  background-color: var(--vel-color-geek-blue-6); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-6 {
+  color: var(--vel-color-geek-blue-6); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-6 {
+  border-color: var(--vel-color-geek-blue-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-6); }
+
+.vel-outline-color-geek-blue-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-6); }
+
+.vel-outline-color-geek-blue-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-6); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-7 {
+  background-color: var(--vel-color-geek-blue-7); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-7 {
+  color: var(--vel-color-geek-blue-7); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-7 {
+  border-color: var(--vel-color-geek-blue-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-7); }
+
+.vel-outline-color-geek-blue-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-7); }
+
+.vel-outline-color-geek-blue-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-7); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-8 {
+  background-color: var(--vel-color-geek-blue-8); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-8 {
+  color: var(--vel-color-geek-blue-8); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-8 {
+  border-color: var(--vel-color-geek-blue-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-8); }
+
+.vel-outline-color-geek-blue-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-8); }
+
+.vel-outline-color-geek-blue-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-8); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-9 {
+  background-color: var(--vel-color-geek-blue-9); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-9 {
+  color: var(--vel-color-geek-blue-9); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-9 {
+  border-color: var(--vel-color-geek-blue-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-9); }
+
+.vel-outline-color-geek-blue-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-9); }
+
+.vel-outline-color-geek-blue-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-9); }
+
+/* Define background colors */
+.vel-bg-color-geek-blue-10 {
+  background-color: var(--vel-color-geek-blue-10); }
+
+/* Define text colors */
+.vel-text-color-geek-blue-10 {
+  color: var(--vel-color-geek-blue-10); }
+
+/* Define outline colors */
+.vel-outline-color-geek-blue-10 {
+  border-color: var(--vel-color-geek-blue-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-geek-blue-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-geek-blue-10); }
+
+.vel-outline-color-geek-blue-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-geek-blue-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-geek-blue-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-geek-blue-10); }
+
+.vel-outline-color-geek-blue-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-geek-blue-10); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-1 {
+  background-color: var(--vel-color-golden-purple-1); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-1 {
+  color: var(--vel-color-golden-purple-1); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-1 {
+  border-color: var(--vel-color-golden-purple-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-1); }
+
+.vel-outline-color-golden-purple-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-1); }
+
+.vel-outline-color-golden-purple-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-1); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-2 {
+  background-color: var(--vel-color-golden-purple-2); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-2 {
+  color: var(--vel-color-golden-purple-2); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-2 {
+  border-color: var(--vel-color-golden-purple-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-2); }
+
+.vel-outline-color-golden-purple-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-2); }
+
+.vel-outline-color-golden-purple-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-2); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-3 {
+  background-color: var(--vel-color-golden-purple-3); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-3 {
+  color: var(--vel-color-golden-purple-3); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-3 {
+  border-color: var(--vel-color-golden-purple-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-3); }
+
+.vel-outline-color-golden-purple-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-3); }
+
+.vel-outline-color-golden-purple-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-3); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-4 {
+  background-color: var(--vel-color-golden-purple-4); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-4 {
+  color: var(--vel-color-golden-purple-4); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-4 {
+  border-color: var(--vel-color-golden-purple-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-4); }
+
+.vel-outline-color-golden-purple-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-4); }
+
+.vel-outline-color-golden-purple-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-4); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-5 {
+  background-color: var(--vel-color-golden-purple-5); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-5 {
+  color: var(--vel-color-golden-purple-5); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-5 {
+  border-color: var(--vel-color-golden-purple-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-5); }
+
+.vel-outline-color-golden-purple-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-5); }
+
+.vel-outline-color-golden-purple-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-5); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-6 {
+  background-color: var(--vel-color-golden-purple-6); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-6 {
+  color: var(--vel-color-golden-purple-6); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-6 {
+  border-color: var(--vel-color-golden-purple-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-6); }
+
+.vel-outline-color-golden-purple-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-6); }
+
+.vel-outline-color-golden-purple-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-6); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-7 {
+  background-color: var(--vel-color-golden-purple-7); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-7 {
+  color: var(--vel-color-golden-purple-7); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-7 {
+  border-color: var(--vel-color-golden-purple-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-7); }
+
+.vel-outline-color-golden-purple-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-7); }
+
+.vel-outline-color-golden-purple-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-7); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-8 {
+  background-color: var(--vel-color-golden-purple-8); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-8 {
+  color: var(--vel-color-golden-purple-8); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-8 {
+  border-color: var(--vel-color-golden-purple-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-8); }
+
+.vel-outline-color-golden-purple-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-8); }
+
+.vel-outline-color-golden-purple-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-8); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-9 {
+  background-color: var(--vel-color-golden-purple-9); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-9 {
+  color: var(--vel-color-golden-purple-9); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-9 {
+  border-color: var(--vel-color-golden-purple-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-9); }
+
+.vel-outline-color-golden-purple-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-9); }
+
+.vel-outline-color-golden-purple-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-9); }
+
+/* Define background colors */
+.vel-bg-color-golden-purple-10 {
+  background-color: var(--vel-color-golden-purple-10); }
+
+/* Define text colors */
+.vel-text-color-golden-purple-10 {
+  color: var(--vel-color-golden-purple-10); }
+
+/* Define outline colors */
+.vel-outline-color-golden-purple-10 {
+  border-color: var(--vel-color-golden-purple-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-golden-purple-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-golden-purple-10); }
+
+.vel-outline-color-golden-purple-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-golden-purple-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-golden-purple-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-golden-purple-10); }
+
+.vel-outline-color-golden-purple-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-golden-purple-10); }
+
+/* Define background colors */
+.vel-bg-color-magenta-1 {
+  background-color: var(--vel-color-magenta-1); }
+
+/* Define text colors */
+.vel-text-color-magenta-1 {
+  color: var(--vel-color-magenta-1); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-1 {
+  border-color: var(--vel-color-magenta-1); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-1_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-1); }
+
+.vel-outline-color-magenta-1_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-1); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-1_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-1); }
+
+.vel-outline-color-magenta-1_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-1); }
+
+/* Define background colors */
+.vel-bg-color-magenta-2 {
+  background-color: var(--vel-color-magenta-2); }
+
+/* Define text colors */
+.vel-text-color-magenta-2 {
+  color: var(--vel-color-magenta-2); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-2 {
+  border-color: var(--vel-color-magenta-2); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-2_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-2); }
+
+.vel-outline-color-magenta-2_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-2); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-2_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-2); }
+
+.vel-outline-color-magenta-2_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-2); }
+
+/* Define background colors */
+.vel-bg-color-magenta-3 {
+  background-color: var(--vel-color-magenta-3); }
+
+/* Define text colors */
+.vel-text-color-magenta-3 {
+  color: var(--vel-color-magenta-3); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-3 {
+  border-color: var(--vel-color-magenta-3); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-3_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-3); }
+
+.vel-outline-color-magenta-3_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-3); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-3_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-3); }
+
+.vel-outline-color-magenta-3_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-3); }
+
+/* Define background colors */
+.vel-bg-color-magenta-4 {
+  background-color: var(--vel-color-magenta-4); }
+
+/* Define text colors */
+.vel-text-color-magenta-4 {
+  color: var(--vel-color-magenta-4); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-4 {
+  border-color: var(--vel-color-magenta-4); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-4_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-4); }
+
+.vel-outline-color-magenta-4_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-4); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-4_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-4); }
+
+.vel-outline-color-magenta-4_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-4); }
+
+/* Define background colors */
+.vel-bg-color-magenta-5 {
+  background-color: var(--vel-color-magenta-5); }
+
+/* Define text colors */
+.vel-text-color-magenta-5 {
+  color: var(--vel-color-magenta-5); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-5 {
+  border-color: var(--vel-color-magenta-5); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-5_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-5); }
+
+.vel-outline-color-magenta-5_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-5); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-5_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-5); }
+
+.vel-outline-color-magenta-5_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-5); }
+
+/* Define background colors */
+.vel-bg-color-magenta-6 {
+  background-color: var(--vel-color-magenta-6); }
+
+/* Define text colors */
+.vel-text-color-magenta-6 {
+  color: var(--vel-color-magenta-6); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-6 {
+  border-color: var(--vel-color-magenta-6); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-6_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-6); }
+
+.vel-outline-color-magenta-6_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-6); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-6_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-6); }
+
+.vel-outline-color-magenta-6_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-6); }
+
+/* Define background colors */
+.vel-bg-color-magenta-7 {
+  background-color: var(--vel-color-magenta-7); }
+
+/* Define text colors */
+.vel-text-color-magenta-7 {
+  color: var(--vel-color-magenta-7); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-7 {
+  border-color: var(--vel-color-magenta-7); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-7_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-7); }
+
+.vel-outline-color-magenta-7_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-7); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-7_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-7); }
+
+.vel-outline-color-magenta-7_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-7); }
+
+/* Define background colors */
+.vel-bg-color-magenta-8 {
+  background-color: var(--vel-color-magenta-8); }
+
+/* Define text colors */
+.vel-text-color-magenta-8 {
+  color: var(--vel-color-magenta-8); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-8 {
+  border-color: var(--vel-color-magenta-8); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-8_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-8); }
+
+.vel-outline-color-magenta-8_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-8); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-8_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-8); }
+
+.vel-outline-color-magenta-8_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-8); }
+
+/* Define background colors */
+.vel-bg-color-magenta-9 {
+  background-color: var(--vel-color-magenta-9); }
+
+/* Define text colors */
+.vel-text-color-magenta-9 {
+  color: var(--vel-color-magenta-9); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-9 {
+  border-color: var(--vel-color-magenta-9); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-9_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-9); }
+
+.vel-outline-color-magenta-9_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-9); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-9_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-9); }
+
+.vel-outline-color-magenta-9_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-9); }
+
+/* Define background colors */
+.vel-bg-color-magenta-10 {
+  background-color: var(--vel-color-magenta-10); }
+
+/* Define text colors */
+.vel-text-color-magenta-10 {
+  color: var(--vel-color-magenta-10); }
+
+/* Define outline colors */
+.vel-outline-color-magenta-10 {
+  border-color: var(--vel-color-magenta-10); }
+
+/* Define outline solid colors */
+.vel-outline-color-magenta-10_solid_1 {
+  border: 0.0625rem solid var(--vel-color-magenta-10); }
+
+.vel-outline-color-magenta-10_solid_2 {
+  border: 0.09375rem solid var(--vel-color-magenta-10); }
+
+/* Define outline dashed colors */
+.vel-outline-color-magenta-10_dashed_1 {
+  border: 0.0625rem dashed var(--vel-color-magenta-10); }
+
+.vel-outline-color-magenta-10_dashed_2 {
+  border: 0.09375rem dashed var(--vel-color-magenta-10); }
+
+/*** Class font ***/
+.vds-font-roboto-thin {
+  font-family: var(--vel-font-roboto-thin); }
+
+.vds-font-roboto-light {
+  font-family: var(--vel-font-roboto-light); }
+
+.vds-font-roboto-regular {
+  font-family: var(--vel-font-roboto-regular); }
+
+.vds-font-roboto-medium {
+  font-family: var(--vel-font-roboto-medium); }
+
+.vds-font-roboto-bold {
+  font-family: var(--vel-font-roboto-bold); }
+
+.vds-font-roboto-black {
+  font-family: var(--vel-font-roboto-black); }

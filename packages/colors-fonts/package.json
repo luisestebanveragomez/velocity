@@ -1,0 +1,20 @@
+{
+  "name": "@velocity/color-fonts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node index.js",
+    "prebuild": "node config.js"
+  },
+  "files": [
+    "/sass",
+    "/css",
+    "assets"
+  ],
+  "devDependencies": {
+    "style-dictionary": "^3.7.1",
+    "node-sass": "^8.0.0",
+    "sass": "^1.57.1"
+  }
+}

@@ -1,0 +1,62 @@
+@use 'sass:string';
+@import './colors';
+@import 'utils';
+
+$vs-space-unit: 16;
+
+@function getColor($palette, $weight: 600) {
+  $colorTokens: map-get($colors, $palette);
+  // @debug map-get($colorTokens, "highligh");
+  $selected: map-get($colorTokens, $weight);
+  // @debug map-get($selected, 100);
+  @return map-get($colorTokens, $weight);
+}
+
+@mixin vel--var-colors() {
+  @each $color_name, $color_map in $colors {
+    $color_value: map-get($colors, $color_name);
+    --vel-#{$color_name}: #{$color_value};
+    --vel-outline-#{$color_name}: var(--vel-#{$color_name});
+  }
+}
+
+@mixin vel--class-color() {
+  @each $color_name, $color_map in $colors {
+    $variable: find-variable-color($colors, $color_map);
+
+    /* Define background colors */
+    .vel-bg-#{$color_name} {
+      background-color: var($variable);
+    }
+
+    /* Define text colors */
+    .vel-text-#{$color_name} {
+      color: var($variable);;
+    }
+
+    /* Define outline colors */
+    .vel-outline-#{$color_name} {
+      border-color: var($variable);
+    }
+    
+    /* Define outline solid colors */
+    .vel-outline-#{$color_name}_solid_1 {
+      border: #{rem(1)} solid var($variable);
+    }
+    .vel-outline-#{$color_name}_solid_2 {
+      border: #{rem(1.5)} solid var($variable);
+    }
+
+    /* Define outline dashed colors */
+   .vel-outline-#{$color_name}_dashed_1 {
+      border: #{rem(1)} dashed var($variable);
+    }
+    .vel-outline-#{$color_name}_dashed_2 {
+      border: #{rem(1.5)} dashed var($variable);
+    }
+  }
+}
+
+@mixin vel-outline-style($width, $style, $variable) {
+  border: #{rem($width)} #{$style} var($variable);
+}
