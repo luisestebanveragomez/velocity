@@ -1,6 +1,6 @@
 {
   "name": "@velocity/color-fonts",
-  "version": "0.0.7-alpha.0",
+  "version": "0.0.7",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
