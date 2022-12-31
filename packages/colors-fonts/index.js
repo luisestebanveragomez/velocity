@@ -3,15 +3,14 @@ const { mkdirSync, writeFileSync } = require('fs');
 const renderSass = () => {
   return render({
       file: './_core.scss',
-      outFile: './css/velocity-core.css'
+      outFile: './resources/velocity-core.css'
     },
     function(errSass, result) {
       if (errSass) {
         console.error("ERROR SASS:", errSass);
         return false;
       } else {
-        mkdirSync(`./css`, { recursive: true });
-        writeFileSync('./css/velocity-core.css', result.css, function(
+        writeFileSync('./resources/velocity-core.css', result.css, function(
           errorWrite
         ) {
           if (!errorWrite) {

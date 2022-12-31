@@ -9,8 +9,7 @@
   },
   "files": [
     "/sass",
-    "/css",
-    "/assets"
+    "/resources"
   ],
   "devDependencies": {
     "node-sass": "^8.0.0",
