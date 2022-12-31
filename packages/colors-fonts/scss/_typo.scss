@@ -16,7 +16,7 @@
     @each $name, $value in $typeFont {
         @font-face {
             font-family: $font;
-            src: url('/assets/fonts/#{to-lower-case($font)}/#{$name}.ttf');
+            src: url('/#{$name}.ttf');
             font-weight: $value;
             font-style: normal;
         }
