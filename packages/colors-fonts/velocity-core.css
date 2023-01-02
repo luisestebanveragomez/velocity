@@ -1,12 +1,12 @@
 @use 'sass:string';
 /**
  * Do not edit directly
- * Generated on Mon, 02 Jan 2023 01:43:15 GMT
+ * Generated on Mon, 02 Jan 2023 01:50:26 GMT
  */
 @use 'sass:string';
 /**
  * Do not edit directly
- * Generated on Mon, 02 Jan 2023 01:43:15 GMT
+ * Generated on Mon, 02 Jan 2023 01:50:26 GMT
  */
 :root {
   /* var colors */
@@ -312,37 +312,37 @@ body {
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/roboto-thin.ttf");
+  src: url("./assets/roboto-thin.ttf");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/roboto-light.ttf");
+  src: url("./assets/roboto-light.ttf");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/roboto-regular.ttf");
+  src: url("./assets/roboto-regular.ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/roboto-medium.ttf");
+  src: url("./assets/roboto-medium.ttf");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/roboto-bold.ttf");
+  src: url("./assets/roboto-bold.ttf");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/roboto-black.ttf");
+  src: url("./assets/roboto-black.ttf");
   font-weight: 900;
   font-style: normal; }
 
