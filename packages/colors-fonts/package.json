@@ -1,16 +1,12 @@
 {
   "name": "@velocity/color-fonts",
   "version": "0.0.8-alpha.0",
-  "main": "index.js",
+  "main": "velocity-core.css",
   "license": "MIT",
   "scripts": {
     "build": "node index.js",
     "prebuild": "node config.js"
   },
-  "files": [
-    "/sass",
-    "/assets"
-  ],
   "devDependencies": {
     "node-sass": "^8.0.0",
     "sass": "^1.57.1",
